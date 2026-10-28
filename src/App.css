@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #080808;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  text-align: center;
+}
+
+.count {
+  font-size: 72px;
+  font-weight: bold;
+  margin: 0 0 32px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+button {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    transform 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+.decrease {
+  background: #242424;
+  color: white;
+}
+
+.decrease:hover {
+  background: #383838;
+}
+
+.increase {
+  background: white;
+  color: black;
+}
+
+.increase:hover {
+  background: #dddddd;
+}
+
+.reset {
+  margin-top: 16px;
+  background: transparent;
+  color: white;
+  border: 1px solid #444444;
+}
+
+.reset:hover {
+  background: #202020;
+}
+
+.app > section {
+  width: 100%;
+  max-width: 360px;
+  margin-top: 24px;
+  padding: 24px;
+  background: #111111;
+  border: 1px solid #333333;
+  border-radius: 16px;
+}
+
+.app > section h2 {
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+
+.app > section .count {
+  margin-bottom: 24px;
+}
+
+.app > section .buttons {
+  flex-wrap: wrap;
+}
+
+.app > section .reset {
+  margin-top: 16px;
+}
+
+
+.success-message {
+  color: #61DAFB;
+  font-weight: bold;
+  margin: -12px 0 24px;
+  animation: appear 0.25s ease-out;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.games {
+  background: #171717;
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 24px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.game-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.game-form input {
+  min-width: 0;
+  flex: 1;
+  padding: 10px;
+  color: white;
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 8px;
+}
+
+.game-form button {
+  padding: 10px 14px;
+  color: #000;
+  background: #61DAFB;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.game-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #61DAFB;
+  padding: 10px;
+  margin-bottom: 8px;
+  background: #222;
+  border-radius: 8px;
+}
+
+.delete-button {
+  padding: 8px 12px;
+  color: white;
+  background: #7a2929;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background: #a83232;
+}
+
+.edit-button {
+  padding: 8px 12px;
+  color: #000;
+  background: #61DAFB;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+
+/* Адаптивность приложения */
+.app {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  box-sizing: border-box;
+}
+
+.games {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.game-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.game-item span {
+  flex: 1;
+  min-width: 120px;
+  overflow-wrap: anywhere;
+}
+
+.game-form input {
+  min-width: 0;
+}
+
+button {
+  min-height: 40px;
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 16px 12px;
+  }
+
+  .game-item {
+    gap: 6px;
+  }
+
+  .game-item button {
+    padding: 8px;
+  }
+
+  .game-form {
+    flex-wrap: wrap;
+  }
+
+  .game-form input {
+    width: 100%;
+  }
+}
