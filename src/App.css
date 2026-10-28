@@ -106,9 +106,8 @@ button:hover {
   margin-top: 16px;
 }
 
-
 .success-message {
-  color: #61DAFB;
+  color: #61dafb;
   font-weight: bold;
   margin: -12px 0 24px;
   animation: appear 0.25s ease-out;
@@ -156,7 +155,7 @@ button:hover {
 .game-form button {
   padding: 10px 14px;
   color: #000;
-  background: #61DAFB;
+  background: #61dafb;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -167,7 +166,7 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  color: #61DAFB;
+  color: #61dafb;
   padding: 10px;
   margin-bottom: 8px;
   background: #222;
@@ -190,13 +189,11 @@ button:hover {
 .edit-button {
   padding: 8px 12px;
   color: #000;
-  background: #61DAFB;
+  background: #61dafb;
   border: none;
   border-radius: 6px;
   cursor: pointer;
 }
-
-
 
 /* Адаптивность приложения */
 .app {
@@ -231,6 +228,33 @@ button:hover {
 
 button {
   min-height: 40px;
+}
+
+.game-message {
+  padding: 10px 12px;
+  color: #61dafb;
+  background: #17272b;
+  border: 1px solid #28515b;
+  border-radius: 8px;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.search-input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  margin-bottom: 16px;
+  color: white;
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 8px;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #61dafb;
 }
 
 @media (max-width: 480px) {

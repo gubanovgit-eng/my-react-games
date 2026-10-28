@@ -1,16 +1,69 @@
-# React + Vite
+# 🎮 Мой React-проект — список игр
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Небольшое веб-приложение на React, созданное в процессе изучения JavaScript и React с нуля.
 
-Currently, two official plugins are available:
+## ✨ Возможности
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- ➕ Добавление новых игр
+- ✏️ Переименование игр
+- 🗑️ Удаление игр
+- 🔍 Поиск по названию игры
+- 💾 Сохранение списка в `localStorage`
+- 🛡️ Защита от добавления дубликатов
+- 📱 Адаптация под компьютеры и мобильные устройства
+- ⚛️ Компонентная структура React
 
-## React Compiler
+## 🛠️ Технологии
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- Vite
+- HTML и CSS
+- Git и GitHub
 
-## Expanding the ESLint configuration
+## 🚀 Запуск проекта
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Установи [Node.js](https://nodejs.org/), затем открой терминал в папке проекта и выполни:
+
+```bash
+npm install
+npm run dev
+```
+
+Vite покажет локальный адрес приложения в терминале. Открой его в браузере.
+
+## 📦 Проверка сборки
+
+Чтобы проверить, собирается ли проект без ошибок:
+
+```bash
+npm run build
+```
+
+## 📁 Структура проекта
+
+```text
+src/
+├── App.jsx
+├── App.css
+└── components/
+    ├── Counter.jsx
+    ├── Games.jsx
+    └── GameItem.jsx
+```
+
+*Состав файлов может меняться по мере развития проекта.*
+
+## 📚 Чему я научился
+
+В процессе работы я изучил основы JSX, компоненты и props, состояние `useState`, обработчики событий, условный рендеринг, массивы и `map()`, удаление элементов через `filter()`, сохранение данных в `localStorage`, поиск, а также основы Git, GitHub и публикации проекта.
+
+## 🎯 Дальнейшие планы
+
+- Улучшать дизайн и удобство приложения
+- Добавлять новые функции
+- Продолжать изучать React
+
+---
+
+**Проект создан в учебных целях.**
